@@ -1,0 +1,30 @@
+.star-rating {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+  line-height: 1;
+}
+.stars {
+  color: lightgray;
+}
+.stars-filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: gold;
+  pointer-events: none;
+}
+.star {
+  display: inline-block;
+  margin-right: 5px;
+}
+.review-summary-container {
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); 
+    padding: 30px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}

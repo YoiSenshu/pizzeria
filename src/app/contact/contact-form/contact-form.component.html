@@ -1,0 +1,31 @@
+<div *ngIf="!formVisible">
+    
+    <p class="p-3" style="text-align: justify;">Wypełnij poniższy formularz, aby się z nami skontaktować. Prosimy o podanie swojego imienia i nazwiska oraz adresu e-mail, abyśmy mogli odpowiedzieć na Twoją wiadomość. W polu wiadomości opisz, co chciałbyś nam przekazać lub jakie pytania masz na myśli. Z przyjemnością odpowiemy na Twoje zapytanie w najkrótszym możliwym czasie!</p>
+
+    <button (click)="showForm()" type="button" class="btn btn-primary d-block ms-auto me-4 mb-3 btn-lg">Napisz do nas!</button>
+</div>
+
+<div *ngIf="formVisible">
+    <form>
+
+        <div class="form-group my-3">
+            <label for="inputNameSurname">Imię i nazwisko:</label>
+            <input type="text" class="form-control" id="inputNameSurname" placeholder="Wpisz imię i nazwisko">
+            <small id="emailHelp" class="form-text text-muted">Jak mamy się do Ciebie zwracać?</small>
+        </div>
+
+        <div class="form-group my-3">
+            <label for="inputEmail">Adres e-mail:</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Wpisz adres e-mail">
+            <small id="emailHelp" class="form-text text-muted">Nie będziemy wysyłać Ci żadnych zbędnych wiadomości. Na ten adres dostarczymy odpowiedź na Twoje pytanie.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="inputMessageContent">Twoja wiadomość:</label>
+            <textarea class="form-control" id="inputMessageContent" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg ms-auto me-3 my-3 d-block">Wyślij wiadomość</button>
+
+    </form>
+</div>

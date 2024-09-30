@@ -1,0 +1,7 @@
+.white-card {
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}

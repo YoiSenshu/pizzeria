@@ -1,0 +1,20 @@
+<div class="review-card">
+    <div class="star-rating">
+        <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+        <div class="stars-filled" [ngStyle]="{ width: getStartPercentage() + '%' }">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+    </div>
+    <p class="review-username">{{ review.username }}</p>
+    <p class="review-content">{{ review.content }}</p>
+</div>

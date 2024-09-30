@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <div class="card pizza-card">
+        <img [src]="pizza.imageUrl" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">{{pizza.name}}</h5>
+            <p class="card-text">{{pizza.description}}</p>
+            <p class="price">Cena: <strong>{{pizza.price}} zł</strong></p>
+            <div class="star-rating">
+                <div class="stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <div class="stars-filled" [ngStyle]="{width: (pizza.averageReview * 20) + '%'}">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+            </div>
+            <p class="average-review">Średnia ocena: <strong>{{pizza.averageReview}}</strong></p>
+        </div>
+    </div>
+</div>

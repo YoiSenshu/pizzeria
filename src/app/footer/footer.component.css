@@ -1,0 +1,27 @@
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.copyright {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}

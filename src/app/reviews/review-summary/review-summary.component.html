@@ -1,0 +1,21 @@
+<div style="width: fit-content; margin: 0 auto;">
+    <div class="review-summary-container">
+        <div class="star-rating">
+            <div class="stars">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+            <div class="stars-filled" [ngStyle]="{width: starsAveragePercentage() + '%'}">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <p class="h5 text-secondary">Nasza średnia opinia to <span class="text-dark">{{starsAverage()}}/5</span> gwiazdki!</p>
+    </div>
+</div>
